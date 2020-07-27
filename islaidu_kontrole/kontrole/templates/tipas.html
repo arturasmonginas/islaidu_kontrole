@@ -1,0 +1,17 @@
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+       <table>
+           {{ form.as_table }}
+       </table>
+        <button type="submit">Išsaugoti</button>
+    </form>
+<a href="islaidos">Pažiūrėti išlaidas</a>
+<br>
+<br>
+<a href="prideti">Pridėti išlaidas</a>
+<br>
+<br>
+<a href="/">Grįžti į pradžią</a>
+
+{% endblock %}

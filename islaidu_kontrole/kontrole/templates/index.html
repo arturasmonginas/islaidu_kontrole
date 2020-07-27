@@ -1,0 +1,11 @@
+{% block content%}
+<h1>Įmonės našumas</h1>
+
+<h1><a href="islaidos"><strong>Išlaidos:</strong> {% for key, value in suma_sum.items %} {{ value }} {% endfor %}</a></h1>
+
+
+<a href="tipas">Pridėti tipą</a>
+<br>
+<br>
+<a href="prideti">Pridėti išlaidas</a>
+{% endblock %}

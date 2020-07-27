@@ -1,0 +1,27 @@
+
+<table>
+    <tr>
+       <th> Data</th>
+        <th>Tipas</th>
+        <th>Tiekėjas</th>
+        <th>Dokumento numeris</th>
+        <th>Suma</th>
+    </tr>
+    {% for laukas in visi_laukai %}
+    <tr>
+        <td>{{ laukas.data }}</td>
+        <td>{{ laukas.tipas }}</td>
+        <td>{{ laukas.tiekejas }}</td>
+        <td>{{ laukas.dokumento_nr }}</td>
+        <td>{{ laukas.suma }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<a href="prideti">Pridėti išlaidas</a>
+<br>
+<br>
+<a href="tipas">Pridėti tipą</a>
+<br>
+<br>
+<a href="/">Grįžti į pradžią</a>
